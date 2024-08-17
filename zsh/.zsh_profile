@@ -1,0 +1,19 @@
+export XDG_CONFIG_HOME=$HOME/.config/
+VIM="nvim"
+
+PERSONAL=$XDG_CONFIG_HOME/personal
+source $PERSONAL/env
+for i in `find -L $PERSONAL`; do
+    source $i;
+done
+
+
+export DOTFILES="$HOME/.dotfiles"
+export GIT_EDITOR=$VIM
+
+addToPathFront $HOME/.local/bin
+addToPathFront $HOME/.local/scripts
+addToPathFront $HOME/.local/go/bin
+
+bindkey -s ^f "tmux_sessionizer_love_ya_prime\n"
+

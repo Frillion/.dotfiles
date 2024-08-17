@@ -1,0 +1,7 @@
+[user]
+	email = fridriksoebech@gmail.com
+	name = Frillion
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
