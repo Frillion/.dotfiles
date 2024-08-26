@@ -14,7 +14,8 @@ export GIT_EDITOR=$VIM
 addToPathFront $HOME/.local/bin
 addToPathFront $HOME/.local/scripts
 addToPathFront $HOME/.local/go/bin
-addToPathFront $HOME/.config
+addToPathFront $HOME/.config/
+addToPathFront /usr/lib/
 
 bindkey -s ^f "tmux_sessionizer_love_ya_prime.sh\n"
 bindkey -s ^g "git_logger.sh\n"
