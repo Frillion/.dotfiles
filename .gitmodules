@@ -9,3 +9,11 @@
 [submodule "tmux/.tmux/plugins/tpm"]
 	path = tmux/.tmux/plugins/tpm	
         url = https://github.com/tmux-plugins/tpm 
+
+[submodule "tmux/.tmux/plugins/tmux-themepack"]
+	path = tmux/.tmux/plugins/tmux-themepack
+	url = https://github.com/jimeh/tmux-themepack.git
+
+[submodule "tmux/.tmux/plugins/vim-tmux-navigator"]
+	path = tmux/.tmux/plugins/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
