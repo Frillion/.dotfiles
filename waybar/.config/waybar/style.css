@@ -43,8 +43,8 @@ button:hover {
     padding: 0 5px;
     margin-bottom: 5px;
     background: #630000;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(32, 32, 32, 1) 50%) padding-box,
-                linear-gradient(90deg,rgba(99, 0, 0, 1) 0%, rgba(200, 00, 0, 1) 50%) border-box;
+    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
+                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
     border: 1px solid transparent;
     border-radius: 50em;
     color: #ffffff;
@@ -85,8 +85,8 @@ button:hover {
 #scratchpad,
 #mpd {
     background: #630000;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(32, 32, 32, 1) 50%) padding-box,
-                linear-gradient(90deg,rgba(99, 0, 0, 1) 0%, rgba(200, 00, 0, 1) 50%) border-box;
+    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
+                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
     border: 1px solid transparent;
     border-radius: 15em;
     padding: 0 15px 0;
@@ -95,8 +95,8 @@ button:hover {
 
 #window {
     background: #630000;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(32, 32, 32, 1) 50%) padding-box,
-                linear-gradient(90deg,rgba(99, 0, 0, 1) 0%, rgba(200, 00, 0, 1) 50%) border-box;
+    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
+                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
     border: 1px solid transparent;
 }
 
@@ -105,7 +105,9 @@ button:hover {
 }
 
 #battery {
-    background-color: RGBA(50,50,50,0.2);
+    background: #630000;
+    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
+                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
     color: #ffffff;
 }
 
@@ -153,15 +155,16 @@ label:focus {
 }
 
 #network {
-    background-color: RGBA(50,50,50,0.2);
+    background-color:#10002b;
+    padding-left:5px;
 }
 
 #network.disconnected {
-    background-color: RGBA(150,50,50,0.2);
+    background-color: #e0aaff;
 }
 
 #pulseaudio {
-    background-color: RGBA(50,50,50,0.2);
+    background-color:#10002b;
     color: #ffffff;
 }
 
@@ -182,11 +185,12 @@ label:focus {
 
 #custom-spotify {
     background: #630000;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(32, 32, 32, 1) 50%) padding-box,
-                linear-gradient(90deg,rgba(99, 0, 0, 1) 0%, rgba(200, 00, 0, 1) 50%) border-box;
+    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
+                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
     border: 1px solid transparent;
     border-radius: 50em;
-    min-width: 100px;
+    padding-right: 3px;
+    min-width: 25px;
 }
 
 #mpd {
@@ -208,8 +212,8 @@ label:focus {
 
 #language {
     background: #630000;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(32, 32, 32, 1) 50%) padding-box,
-                linear-gradient(90deg,rgba(99, 0, 0, 1) 0%, rgba(200, 00, 0, 1) 50%) border-box;
+    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
+                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
     border: 1px solid transparent;
     border-radius: 50em;
     color: #ffffff;
