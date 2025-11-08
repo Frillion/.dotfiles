@@ -20,3 +20,6 @@
 [submodule "awww"]
 	path = awww/awww
 	url = https://codeberg.org/LGFae/awww.git
+[submodule "yay-bin"]
+	path = yay-bin
+	url = https://aur.archlinux.org/yay-bin.git
