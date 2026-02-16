@@ -18,6 +18,7 @@ addToPathFront $HOME/.config/
 addToPathFront /usr/lib/
 addToPathFront /usr/lib/jvm/java-21-openjdk/bin/
 addToPathFront $HOME/go/bin
+addToPathFront $HOME/.dotnet/tools/
 
 bindkey -s ^f "tmux_sessionizer_love_ya_prime.sh\n"
 bindkey -s ^g "git_logger.sh\n"
