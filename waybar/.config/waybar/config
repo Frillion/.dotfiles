@@ -1,7 +1,7 @@
 [{
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "spacing": 10, // Gaps between modules (4px)
+    "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [],
     "modules-center": ["hyprland/window"],

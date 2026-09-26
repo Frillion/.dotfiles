@@ -10,7 +10,7 @@ window#waybar {
     transition-property: background-color;
     transition-duration: .5s;
     border:3px solid #AAAAAA;
-    padding:10px 10px 0px 0px;
+    padding:0px 10px 0px 0px;
 }
 
 window#waybar.hidden {
@@ -45,7 +45,6 @@ button:hover {
     padding: 0px 5px 0px;
     margin-bottom: 3px;
     margin-top: 3px;
-    margin-right:3px;
     background: #000000;
     border-left: 3px solid #AAAAAA;
     color: #ffffff;
