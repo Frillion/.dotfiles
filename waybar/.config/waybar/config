@@ -1,35 +1,23 @@
 [{
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
-    "width": 1920, // Waybar width
     "spacing": 10, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [],
     "modules-center": ["hyprland/window"],
-    "modules-right": [],
+    "modules-right": ["pulseaudio", "network","hyprland/language","clock","hyprland/workspaces","battery"],
     // Modules configuration
     "mode":"overlay",
 
+    "hyprland/window":{
+        "format":"{}",
+        "min-length":50,
+        "max-length":50
+    },
     "tray": {
         // "icon-size": 21,
         "spacing": 10
     },
-},
-{
-    "name":"StatsBar",
-    "layer": "top", // Waybar at top layer
-    "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 10, // Waybar height (to be removed for auto height)
-    "width": 1920, // Waybar width
-    "spacing": 10, // Gaps between modules (4px)
-    // Choose the order of the modules
-    "modules-left": [],
-    "modules-center" : ["custom/spotify","pulseaudio", "network","hyprland/language","battery"],
-    "modules-right": [],
-    // Modules configuration
-    "mode":"overlay",
-
     "battery": {
         "states": {
             // "good": 95,
@@ -46,11 +34,10 @@
     },
 
     "clock": {
-        // "timezone": "Iceland",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-	"locale": "is.IS-UTF-8",
-        "format-alt": "{:%Y-%m-%d}"
+        "timezone": "Iceland",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
+    
 
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -83,42 +70,6 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
 	"on-click": "nm-connection-editor"
-    },
-    "custom/spotify": {
-        "format": "",
-	"on-click": "spotify",
-	"return-type": "text"
     }
-},
-{
-    "name":"WorkspaceBar",
-    "layer": "top", // Waybar at top layer
-    "position": "left", // Waybar position (top|bottom|left|right)
-    "height": 1080, // Waybar height (to be removed for auto height)
-    "width": 50, // Waybar width
-    "spacing": 100, // Gaps between modules (4px)
-    // Choose the order of the modules
-    "modules-left": [],
-    "modules-center" : ["hyprland/workspaces"],
-    "modules-right": [],
-    // Modules configuration
-    "mode":"overlay",
-    "hyprland/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-        "orientation":"vertical",
-         "format-icons": {
-             "1": "",
-             "2": "",
-             "3": "",
-             "4": "",
-             "5": "",
-             "urgent": "",
-             "focused": "",
-             "default": ""
-         }
-    },
 }]
 

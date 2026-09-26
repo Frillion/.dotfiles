@@ -5,10 +5,12 @@
 }
 
 window#waybar {
-    background: rgba(0,0,0,0);
+    background: rgba(0,0,0,1);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+    border:3px solid #AAAAAA;
+    padding:10px 10px 0px 0px;
 }
 
 window#waybar.hidden {
@@ -40,13 +42,12 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 5px;
-    margin-bottom: 5px;
-    background: #630000;
-    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
-                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
-    border: 1px solid transparent;
-    border-radius: 50em;
+    padding: 0px 5px 0px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    margin-right:3px;
+    background: #000000;
+    border-left: 3px solid #AAAAAA;
     color: #ffffff;
 }
 
@@ -84,30 +85,22 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-    background: #630000;
-    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
-                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
-    border: 1px solid transparent;
-    border-radius: 15em;
-    padding: 0 15px 0;
+    background:#000000;
+    border-left: 3px solid #AAAAAA;
+    padding: 0px 10px 0px;
+    margin: 3px 0px 3px 0px;
     color: #ffffff;
 }
 
 #window {
-    background: #630000;
-    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
-                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
-    border: 1px solid transparent;
-}
-
-#clock {
-    background-color: #64727D;
+    background: #000000;
+    margin:3px 0px 3px 0px;
+    border-left: 3px solid #AAAAAA;
+    border-right: 3px solid #AAAAAA;
 }
 
 #battery {
-    background: #630000;
-    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
-                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
+    background: #000000;
     color: #ffffff;
 }
 
@@ -182,17 +175,6 @@ label:focus {
     background-color: #f53c3c;
 }
 
-
-#custom-spotify {
-    background: #630000;
-    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
-                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
-    border: 1px solid transparent;
-    border-radius: 50em;
-    padding-right: 3px;
-    min-width: 25px;
-}
-
 #mpd {
     background-color: #66cc99;
     color: #2a5c45;
@@ -211,13 +193,9 @@ label:focus {
 }
 
 #language {
-    background: #630000;
-    background: linear-gradient(180deg, #10002b 0%, #5a189a 50%) padding-box,
-                linear-gradient(180deg, #9d4edd 0%, #e0aaff 50%) border-box;
-    border: 1px solid transparent;
-    border-radius: 50em;
+    background: #000000;
+    border-left: 3px solid #AAAAAA;
     color: #ffffff;
-    padding: 0 5px 0;
-    min-width: 16px;
-    border-radius: 25px;
+    margin:3px 0px 3px 0px;
+    padding: 0px 10px 0px;
 }
