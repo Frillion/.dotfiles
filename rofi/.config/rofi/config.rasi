@@ -1,6 +1,6 @@
 configuration {
 	modes: "window,drun,run,ssh";
-	font: "Fira Code 15";
+	font: "VCR OSD Mono 15";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -21,7 +21,7 @@ configuration {
 /*	run-shell-command: "{terminal} -e {cmd}";*/
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
-	icon-theme: "candy-icons";
+	icon-theme: "Fabia-Mono";
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
 /*	drun-exclude-categories: ;*/
@@ -175,7 +175,7 @@ configuration {
 
 window{
     transparency: "real";
-    background-color: #300030A3;
+    background-color: #000000A3;
     height: 47%;
 }
 prompt{
@@ -184,9 +184,19 @@ prompt{
 
 element selected.normal{
     transparency: "real";
-    background-color: #4A002BAC;
+    background-color: #000000AC;
     border: 5px;
     border-color:#DDDDDD;
+}
+
+element normal.normal{
+    transparency: "real";
+    background-color: #000000AC;
+}
+
+element alternate.normal{
+    transparency: "real";
+    background-color: #000000AC;
 }
 
 textbox-prompt-colon {
