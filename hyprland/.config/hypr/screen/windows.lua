@@ -4,6 +4,12 @@ hl.config({
     }
 })
 
+hl.window_rule({
+    name = "test space",
+    match = {workspace = "1"},
+    tag = "+shader:/home/Frillion/.config/hypr/greyscale.frag"
+})
+
 hl.bind("SUPER + SHIFT + 1", function ()
     hl.dispatch(hl.dsp.window.move({workspace = "1"}))
 end)

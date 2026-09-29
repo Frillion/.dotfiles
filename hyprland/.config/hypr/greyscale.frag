@@ -1,17 +1,16 @@
-#version 300 es
+#version 320 es
 
-precision mediump float;
+precision highp float;
 in vec2 v_texcoord;
-layout (location = 0) out vec4 frag;
+layout (location = 0) out vec4 fragColor;
 uniform sampler2D tex;
+uniform float time;
 
 void main(){
-    float dx = 1.0/1100.0;
-    float dy = 1.0/1100.0;
-    vec2 modified_tex = vec2(dx*floor(v_texcoord.x/dx),dy*floor(v_texcoord.y/dy));
-    vec4 col = texture(tex, modified_tex);
+    vec4 col = texture(tex, v_texcoord);
+    float dist = pow(1.0 - abs(dot(v_texcoord - 0.5, v_texcoord - 0.5)), 40.0 - sin(time * 0.2) * 20.0);
     vec3 grey = vec3(0.299, 0.587, 0.114);
     float value = dot(col.rgb, grey);
-    vec4 final = vec4(value,value,value,col.a);
-    frag = final;
+    vec4 final = mix(vec4(value,value,value,1.0),vec4(1.0,0.0,0.0,1.0),dist);
+    fragColor = final;
 }
