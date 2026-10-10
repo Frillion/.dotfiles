@@ -4,7 +4,7 @@ BROWSER = "firefox"
 STATUS_BAR_GAP = 30
 
 hl.on("hyprland.start",function ()
-    hl.exec_cmd("waybar & hyprpaper & hyprpm reload -n")
+    hl.exec_cmd("waybar & hyprpaper & hyprpm reload -n & systemctl --user opentabletdriver --now")
 end)
 
 hl.on("config.reloaded",function ()
