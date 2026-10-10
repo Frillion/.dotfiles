@@ -5,3 +5,7 @@ hl.on("workspace.active",function ()
         hl.dispatch(hl.dsp.exec_cmd('hyprctl hyprpaper wallpaper "' .. new_workspace.monitor.name.. ',' .. SIF_SEQUENCE[new_workspace.id] .. '"'))
     end
 end)
+
+hl.bind("SUPER + O", function ()
+    hl.dispatch(hl.dsp.workspace.toggle_special("overlay"))
+end)
