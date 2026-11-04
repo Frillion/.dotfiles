@@ -5,6 +5,7 @@ hl.config({
 })
 
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag())
+hl.bind("SUPER + mouse:273", hl.dsp.window.resize())
 
 hl.bind("SUPER + SHIFT + 1", function ()
     hl.dispatch(hl.dsp.window.move({workspace = "1"}))
