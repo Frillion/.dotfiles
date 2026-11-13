@@ -16,7 +16,7 @@ hl.config({
         disable_hyprland_logo = true,
         disable_splash_rendering = true,
         force_default_wallpaper = 0,
-        render_unfocused_fps = 144
+        render_unfocused_fps = 120
     },
     debug = {
         damage_tracking = 0,
