@@ -49,3 +49,6 @@ hl.bind("SUPER + 7",function ()
      hl.dispatch(hl.dsp.focus({workspace = 7}))
 end)
 
+hl.bind("SUPER + SPACE", function()
+  os.execute("hyprctl switchxkblayout current next")
+end)
