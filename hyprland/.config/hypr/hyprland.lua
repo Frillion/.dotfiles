@@ -20,6 +20,11 @@ hl.config({
     },
     debug = {
         damage_tracking = 0,
+    },
+    input = {
+        kb_layout = "us,is",
+        kb_variant = ",",
+        kb_options = "grp:alt_shift_toggle",
     }
 })
 
